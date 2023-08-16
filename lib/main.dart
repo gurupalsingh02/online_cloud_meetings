@@ -19,10 +19,6 @@ class MyApp extends ConsumerWidget {
         darkTheme: ThemeData.dark(),
         title: 'Flutter Demo',
         onGenerateRoute: generateRoute,
-        home: const PreviewPage(
-            meetingId: "meetingId",
-            name: "name",
-            email: "email",
-            photoUrl: "photoUrl"));
+        home: const LoginScreen());
   }
 }
