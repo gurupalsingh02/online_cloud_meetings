@@ -49,13 +49,11 @@ class MeetingPage extends ConsumerStatefulWidget {
 class _MeetingPageState extends ConsumerState<MeetingPage> {
   late bool camera = true;
   late bool mic = true;
-  final IO.Socket socket = IO.io(
-      "https://online-meetings-app-backend.onrender.com",
-      // "http://localhost:5000/",
-      <String, dynamic>{
-        "transports": ["websocket"],
-        "autoConnect": false
-      });
+  final IO.Socket socket =
+      IO.io("https://online-meetings.me:3000", <String, dynamic>{
+    "transports": ["websocket"],
+    "autoConnect": false
+  });
   final TextEditingController _controller = TextEditingController();
   final Peer peer = Peer(options: PeerOptions(debug: LogLevel.All));
   final _localRenderer = RTCVideoRenderer();

@@ -11,7 +11,7 @@ import 'package:online_cloud_meetings/screens/meeting_page.dart';
 
 import 'models/user.dart';
 
-String baseUrl = "http://108.143.77.5:3000";
+String baseUrl = "https://online-meetings.me:3000";
 
 class ApiServices {
   static Future<GoogleSignInAccount?> signInWithGoogle(
